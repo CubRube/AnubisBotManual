@@ -31,7 +31,7 @@ chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\logs\*.*
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\numers\*.*
 cd /
 chmod 777 htmlphpmyadmin
-PHPMYADMIN START
+PHPMYADMIN ANUBIS START
 cd /htmlphpmyadmin && screen php -s 127.0.0.1:8081 (NO CTRL + C)
 cd /htmlanubis && screen php -s 127.0.0.1:80 (NO CTRL + C)
 
