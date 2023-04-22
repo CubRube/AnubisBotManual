@@ -35,17 +35,7 @@ chmod 777 datalogs\*.*
 chmod 777 datalogs\files\*.*
 chmod 777 datalogs\logs\*.*
 chmod 777 datalogs\numers\*.*
-cd /var/www/html/c2Zkc2RmYXNkYXNzZGE/c2Zkc2RmYXNkYXNzZGE
-chmod 777 application
-cd application
-chmod 777 websocket\*.*
-chmod 777 websocket\sound\*.*
-chmod 777 websocket\VNC\*.*
-chmod 777 *.*
-chmod 777 datalogs\*.*
-chmod 777 datalogs\files\*.*
-chmod 777 datalogs\logs\*.*
-chmod 777 datalogs\numers\*.*
+
 cd /var/www/htmlphpmyadmin/
 screen php -S 127.0.0.1:8081 (phpmyadmin) no close crtl + C
 __________________________________
