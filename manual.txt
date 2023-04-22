@@ -19,7 +19,7 @@ cd /var/www
 rm -Rf html
 git clone https://github.com/CubRube/anubisdownloader2.5
 mv anubisdownloader2.5 html
-chmod 700 html
+chmod 777 html
 cd html
 mv phpmyadmin /var/www/htmlphpmyadmin
 cd /
